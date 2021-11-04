@@ -2,11 +2,11 @@ extends layout
 
 block content
   h1= title
-  - let image_names = ['img1.jpg','img2.jpg','img3.jpg','img4.jpg','img5.jpg']
+  - let sweater_names = ['sweater1.jpg','sweater2.jpg','sweater3.jpg','sweater4.jpg','sweater5.jpg']
   - for(let i=0;i<3;i++){
-      - let numb = Math.floor(Math.random()*5)
-      - let imgname = image_names[numb]
+      - let number = Math.floor(Math.random()*5)
+      - let sweatername = sweater_names[number]
 
-      img(src=`images/${imgname}` alt='flowers' style='width:300px; height:300px;')
+      img(src=`images/${sweatername}` alt='Sweater' style='width:300px; height:300px;')
       |    
   - }
