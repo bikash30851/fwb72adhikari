@@ -1,0 +1,9 @@
+extends layout
+block content
+  h1= title
+  - const Sweater = ['color','price','size']
+  - let results;
+  div(class='container-fluid')
+    div(class='row')
+      each results
+        div(class='col-sm-2' #{results}
